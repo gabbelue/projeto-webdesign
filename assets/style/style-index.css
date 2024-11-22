@@ -1,0 +1,144 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #dfe6ff;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e927f;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Botões de Navegação */
+header nav a.button {
+    background-color: #41796e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+header nav a.button:hover {
+    background-color: #71c8b8;
+}
+
+/* Conteúdo principal */
+main {
+    color:#0c6254;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: rgba(235, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Container de conteúdo para alinhar a imagem e o texto */
+.conteudo {
+    display: flex;
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Estilo para a imagem */
+.imagem img {
+    max-width: 300px; /* Tamanho máximo da imagem */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Sobre e Serviços */
+section {
+    padding: 20px;
+    text-align: center;
+    color:#0c6254;
+}
+
+/* Organiza as imagens lado a lado */
+.imagem-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo para as imagens */
+.imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.imagem ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Efeito de movimento ao clicar (pressionar) na imagem */
+.imagem img:active {
+    transform: scale(1.6) translateX(20px); /* Aumenta a imagem e move para a direita */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .imagem {
+        flex-direction: column;
+        align-items: center;
+        width: 80%; /* Imagens ocupam mais espaço em telas pequenas */
+        margin-bottom: 20px;
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(12, 98, 84, 0.8); /* Fundo semitransparente */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra superior */
+}
