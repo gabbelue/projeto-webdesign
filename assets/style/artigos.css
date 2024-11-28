@@ -152,4 +152,10 @@ section ul {
 footer {
     background-color: rgba(12, 98, 84, 0.8); /* Fundo semitransparente */
     color: white;
-    
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra superior */
+}
