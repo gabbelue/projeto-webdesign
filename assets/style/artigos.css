@@ -7,15 +7,16 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #f0f4f8;
+    background-color: #dfe6ff; /* Fundo azul claro */
 }
 
 /* Cabeçalho */
 header {
-    background-color: #1e927f;
+    background-color: #1e927f; /* Verde sólido */
     color: white;
     text-align: center;
     padding: 20px 10px;
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -23,84 +24,132 @@ header h1 {
     margin: 0;
 }
 
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
 header nav a {
-    background-color: #41796e;
+    color: white;
+    text-decoration: none;
+}
+
+/* Botões de Navegação */
+header nav a.button {
+    background-color: #41796e; /* Botão verde escuro */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
-    text-decoration: none;
     transition: background-color 0.3s;
 }
 
-header nav a:hover {
-    background-color: #71c8b8;
+header nav a.button:hover {
+    background-color: #71c8b8; /* Verde claro ao passar o mouse */
 }
 
-/* Seção de Artigos */
-#articles {
-    padding: 40px 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(17, 87, 92, 0.1);
-    margin: 20px;
+/* Conteúdo principal */
+main {
+    color: #0c6254; /* Verde escuro */
     flex: 1;
-}
-
-#articles h2 {
-    font-size: 2rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#articles p {
-    text-align: center;
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 30px;
-}
-
-.article {
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    border-bottom: 1px solid #ddd;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: rgba(235, 255, 255, 0.9); /* Fundo branco translúcido */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
-.article h3 {
-    font-size: 1.5rem;
-    color: #104036;
+/* Texto e Imagens */
+.introducao,
+section {
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    color: #0c6254;
+}
+
+.introducao h1, 
+.introducao h3 {
+    text-align: left;
+    line-height: 1.8;
     margin-bottom: 10px;
 }
 
-.article p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.article a {
-    color: #1e927f;
+.introducao h1 {
+    font-size: 2rem;
     font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s;
 }
 
-.article a:hover {
-    color: #145a4a;
+.introducao h3 {
+    font-size: 1.1rem;
+}
+
+/* Sobre e Serviços */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #104036; /* Verde profundo */
+}
+
+section p {
+    text-align: justify;
+    line-height: 1.8;
+    color: #0c6254;
+}
+
+section ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #0c6254;
+}
+
+/* Container de conteúdo para alinhar a imagem e o texto */
+.conteudo {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+
+/* Estilo para a imagem */
+.imagem img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Organiza as imagens lado a lado */
+.imagem-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .imagem {
+        flex-direction: column;
+        align-items: center;
+        width: 80%; 
+        margin-bottom: 20px;
+    }
 }
 
 /* Rodapé */
 footer {
-    background-color: rgba(12, 98, 84, 0.8);
+    background-color: rgba(12, 98, 84, 0.8); /* Fundo semitransparente */
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: auto;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-}
-
-footer p {
-    font-size: 1rem;
-}
+    

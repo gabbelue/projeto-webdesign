@@ -1,18 +1,18 @@
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Mesma fonte aplicada globalmente */
     line-height: 1.6;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #dfe6ff;
+    background-color: #dfe6ff; /* Fundo azul claro */
 }
 
 /* Cabeçalho */
 header {
-    background-color: #1e927f;
+    background-color: #1e927f; /* Verde sólido */
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -20,7 +20,7 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0;
 }
 
@@ -43,7 +43,7 @@ header nav a {
 
 /* Botões de Navegação */
 header nav a.button {
-    background-color: #41796e;
+    background-color: #41796e; /* Botão verde escuro */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -53,35 +53,72 @@ header nav a.button {
 }
 
 header nav a.button:hover {
-    background-color: #71c8b8;
+    background-color: #71c8b8; /* Verde claro ao passar o mouse */
 }
 
 /* Conteúdo principal */
 main {
-    color:#0c6254;
+    color: #0c6254; /* Verde escuro */
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     padding: 20px;
     margin: 20px auto;
     max-width: 80%;
-    background-color: rgba(235, 255, 255, 0.9);
+    background-color: rgba(235, 255, 255, 0.9); /* Fundo branco translúcido */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Texto e Imagens */
+.introducao,
+section {
+    font-family: Arial, sans-serif; /* Uniformizando a fonte */
+    text-align: justify;
+    color: #0c6254;
+}
+
+.introducao h1, 
+.introducao h3 {
+    text-align: left;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.introducao h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.introducao h3 {
+    font-size: 1.1rem;
+}
+
+/* Sobre e Serviços */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #104036; /* Verde profundo */
+}
+
+section p {
+    text-align: justify;
+    line-height: 1.8;
+    color: #0c6254;
 }
 
 /* Container de conteúdo para alinhar a imagem e o texto */
 .conteudo {
     display: flex;
-    align-items: center; /* Alinha os itens no centro verticalmente */
-    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    align-items: center; 
+    gap: 20px; 
 }
 
 /* Estilo para a imagem */
 .imagem img {
-    max-width: 300px; /* Tamanho máximo da imagem */
+    max-width: 300px; 
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -126,7 +163,7 @@ section {
     .imagem {
         flex-direction: column;
         align-items: center;
-        width: 80%; /* Imagens ocupam mais espaço em telas pequenas */
+        width: 80%; 
         margin-bottom: 20px;
     }
 }

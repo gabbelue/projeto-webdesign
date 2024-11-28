@@ -4,14 +4,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    flex-direction: column; 
 }
 
 /* Cabeçalho */
 header {
-    background-color: rgba(12, 98, 84, 0.8); /* Fundo semitransparente */
+    background-color: #1e927f;
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -51,14 +51,14 @@ header nav a:hover {
 
 /* Conteúdo principal */
 main {
-    flex: 1; /* Faz o conteúdo principal crescer para preencher o espaço entre header e footer */
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     margin: 20px auto;
     max-width: 80%;
-    background-color: rgba(235, 255, 255, 0.9); /* Fundo semitransparente */
+    background-color: rgba(235, 255, 255, 0.9); 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -72,13 +72,13 @@ main {
 }
 
 .imagem img {
-    max-width: 300px; /* Define um tamanho máximo para a imagem */
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    display: block;  /* Faz cada imagem ocupar uma linha completa */
-    margin-bottom: 10px;  /* Espaço entre as imagens */
-    width: 100%;  /* Opcional: Ajusta a largura da imagem conforme necessário */
+    display: block;  
+    margin-bottom: 10px;  
+    width: 100%; 
 }
 
 
@@ -95,25 +95,25 @@ main {
 
 /* Rodapé */
 footer {
-    background-color: rgba(12, 98, 84, 0.8); /* Fundo semitransparente */
+    background-color: rgba(12, 98, 84, 0.8); 
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra superior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .conteudo {
-        flex-direction: column; /* Coloca as imagens e o texto em coluna em telas menores */
+        flex-direction: column;
         align-items: center;
     }
 
     .imagem img {
-        max-width: 100%; /* Imagens ocupam a largura total em dispositivos móveis */
+        max-width: 100%; 
     }
 
     .texto {
