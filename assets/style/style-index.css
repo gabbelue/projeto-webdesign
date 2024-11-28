@@ -1,18 +1,16 @@
-/* Estilos gerais */
 body {
-    font-family: Arial, sans-serif; /* Mesma fonte aplicada globalmente */
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #dfe6ff; /* Fundo azul claro */
+    background-color: #dfe6ff;
 }
 
-/* Cabeçalho */
 header {
-    background-color: #1e927f; /* Verde sólido */
+    background-color: #1e927f;
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -20,7 +18,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
 }
 
@@ -41,9 +39,8 @@ header nav a {
     text-decoration: none;
 }
 
-/* Botões de Navegação */
 header nav a.button {
-    background-color: #41796e; /* Botão verde escuro */
+    background-color: #41796e;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -53,129 +50,93 @@ header nav a.button {
 }
 
 header nav a.button:hover {
-    background-color: #71c8b8; /* Verde claro ao passar o mouse */
+    background-color: #71c8b8;
 }
 
-/* Conteúdo principal */
 main {
-    color: #0c6254; /* Verde escuro */
+    color:#0c6254;
     flex: 1;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 20px;
     margin: 20px auto;
     max-width: 80%;
-    background-color: rgba(235, 255, 255, 0.9); /* Fundo branco translúcido */
+    background-color: rgba(235, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Texto e Imagens */
-.introducao,
-section {
-    font-family: Arial, sans-serif; /* Uniformizando a fonte */
-    text-align: justify;
-    color: #0c6254;
-}
-
-.introducao h1, 
-.introducao h3 {
-    text-align: left;
-    line-height: 1.8;
-    margin-bottom: 10px;
-}
-
-.introducao h1 {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.introducao h3 {
-    font-size: 1.1rem;
-}
-
-/* Sobre e Serviços */
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #104036; /* Verde profundo */
-}
-
-section p {
-    text-align: justify;
-    line-height: 1.8;
-    color: #0c6254;
-}
-
-/* Container de conteúdo para alinhar a imagem e o texto */
 .conteudo {
     display: flex;
-    align-items: center; 
-    gap: 20px; 
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
 }
 
-/* Estilo para a imagem */
-.imagem img {
-    max-width: 300px; 
+.conteudo .imagem img {
+    max-width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
 }
 
-/* Sobre e Serviços */
+.conteudo .texto {
+    flex: 1; 
+    color: #0c6254;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
 section {
     padding: 20px;
-    text-align: center;
+    text-align: justify;
     color:#0c6254;
 }
 
-/* Organiza as imagens lado a lado */
 .imagem-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
-/* Estilo para as imagens */
-.imagem img {
+.imagens img {
     width: 100%;
-    height: auto;
+    height: 300px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.imagem ul {
+.imagens ul {
     list-style: none;
     padding: 0;
     text-align: center;
 }
 
-/* Efeito de movimento ao clicar (pressionar) na imagem */
-.imagem img:active {
-    transform: scale(1.6) translateX(20px); /* Aumenta a imagem e move para a direita */
+.imagens img:active {
+    transform: scale(1.6) translateX(20px);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .imagem {
         flex-direction: column;
         align-items: center;
-        width: 80%; 
+        width: 80%;
         margin-bottom: 20px;
     }
 }
 
-/* Rodapé */
 footer {
-    background-color: rgba(12, 98, 84, 0.8); /* Fundo semitransparente */
+    background-color: rgba(12, 98, 84, 0.8);
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra superior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
